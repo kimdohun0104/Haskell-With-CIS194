@@ -1,6 +1,4 @@
--- chcp 65001 for Permission Denied error
-
-module Main where
+module Class1(checkCard) where
 
 -- Card Number vaildator
 toDigits :: Integer -> [Integer]
@@ -34,5 +32,5 @@ validateCardNum x
     | x `mod` 10 == 0 = True
     | otherwise = False
 
-main :: IO ()
-main = print (validateCardNum $ sumDigits $ doubleEveryOther $ toDigits 513)
+checkCard :: Integer -> Bool
+checkCard x = validateCardNum $ sumDigits $ doubleEveryOther $ toDigits x 

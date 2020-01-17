@@ -1,0 +1,17 @@
+name: class1
+version: 0.1.0.0
+
+dependencies: 
+  - base
+
+library:
+  exposed-modules: Class1
+  source-dirs: src
+  ghc-options: -Wall
+
+tests:
+  test:
+    main: Tests.hs
+    source-dirs: test
+    dependencies:
+      - class1
