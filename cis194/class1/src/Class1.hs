@@ -1,4 +1,4 @@
-module Class1(checkCard) where
+module Class1 where
 
 -- Card Number vaildator
 toDigits :: Integer -> [Integer]

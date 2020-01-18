@@ -15,3 +15,4 @@ tests:
     source-dirs: test
     dependencies:
       - class1
+      - hspec
